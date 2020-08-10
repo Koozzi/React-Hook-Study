@@ -4,7 +4,7 @@
 
 ## Example
 
-```
+~~~javascript
 const sayHello = () =>{
     console.log("Hello")
 }
@@ -13,19 +13,19 @@ const [aNumber, setAnumber] = useState(0);
 1. useEffect(sayHello, [number]);
 2. useEffect(sayHello, []);
 3. useEffect(sayHello);
-```
+~~~
 
-### useEffect(sayHello, [number])
+### 1. useEffect(sayHello, [number])
 1. 페이지 새로고침을 하면(Mount) sayHello Funtion이 실행 O
 2. number의 값이 변했을 때 sayHello Funtion이 실행 O
 3. aNumber의 값이 변했을 는 sayHello Function이 실행 X 
 
-### useEffect(sayHello, [])
+### 2. useEffect(sayHello, [])
 1. 페이지 새로고침을 하면(Mount) sayHello Funtion이 실행 O
 2. number의 값이 변했을 때 sayHello Funtion이 실행 X
 3. aNumber의 값이 변했을 는 sayHello Function이 실행 X 
 
-### useEffect(sayHello)
+### 3. useEffect(sayHello)
 1. 페이지 새로고침을 하면(Mount) sayHello Funtion이 실행 O
 2. number의 값이 변했을 때 sayHello Funtion이 실행 O
 3. aNumber의 값이 변했을 는 sayHello Function이 실행 O
