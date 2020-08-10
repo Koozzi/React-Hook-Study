@@ -2,6 +2,14 @@
 
 
 \.
+## ✔️ useState( initialValue )
+1. 상태값을 초기화하는데 사용.
+### `useState` Example
+~~~javascript
+const [item, setItem] = useState(1);
+const incrementItem = () => setItem(item + 1);
+const decrementItem = () => setItem(item - 1);
+~~~
 ## ✔️ useEffect(function, [...]) 
 1. 페이지를 새로 업데이트 했을 때(Mount), function이 실행 됨.
 2. [] 에 들어있는 값이 변했을 때, function이 실행 됨.
